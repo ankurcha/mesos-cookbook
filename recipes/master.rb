@@ -6,7 +6,6 @@
 include_recipe 'et_mesos::default'
 
 service 'mesos-master' do
-  provider Chef::Provider::Service::Upstart
   supports restart: true, reload: true
   action :nothing
 end
